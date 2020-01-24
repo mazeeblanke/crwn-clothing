@@ -13,7 +13,9 @@
   font-weight: bolder;
   border: none;
 	cursor: pointer;
-	transition: 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  display: flex;
+  justify-content: center;
 
   &:hover {
     background-color: white;
@@ -29,5 +31,17 @@
       background-color: darken($color: #4285f4, $amount: 15);
       border: none;
     }
+  }
+
+  &:inverted {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    } 
+
   }
 }
